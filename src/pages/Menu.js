@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ReactComponent as CloseMenu } from "../assets/x.svg";
 import { ReactComponent as MenuIcon } from "../assets/menu.svg";
 import {Link} from "react-router-dom";
+import logo from "../assets/logo3.png";
 import "./Menu.css";
 
 
@@ -71,7 +72,7 @@ const Menu = () => {
     return (
         <div className="header">
             <div className='logoContainer'>
-
+               <img className="logo-shop" src={logo}/>
             </div>
             <div className='headerItems' style={{marginBottom: "23px", marginRight: "120px", marginTop: "25px"}}>
                 <ul className={click ? "nav-options active" : "nav-options"}>
