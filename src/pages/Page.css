@@ -1,0 +1,54 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.img-item{
+    height: 200px;
+    width: 200px;
+}
+
+.shop-title{
+    text-align: center;
+}
+
+.shop-item{
+    text-align: center;
+    min-height: 100%;
+    width: 300px;
+    background-color: #8A9EA7;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.shop-item-list{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-item{
+    margin-top: 20px;
+    padding: 15px 0 5px 5px;
+    height: 80px;
+}
+
+.item-description{
+    padding: 0 10px;
+    height: 200px;
+    position: relative;
+    font-size: 14px;
+}
+
+.center-item-description{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-8%, -50%);
+}
+
+.item-category{
+    margin: 0;
+    padding: 5px;
+}
