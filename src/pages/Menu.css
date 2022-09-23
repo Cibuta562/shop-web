@@ -1,6 +1,7 @@
 .logo-shop{
     height: 70px;
     width:  70px;
+    padding-top: 15px;
 }
 
 .header {
@@ -13,12 +14,14 @@
     height: 80px;
 }
 
-
+.header.color-change{
+    background-color: #dfe8e3;
+}
 
 .header2{
     display: flex;
     z-index: 3;
-    background-color:  rgba(0,0,0,0);
+    background-color: #dfe8e3;
     justify-content: space-between;
     align-items: center;
     height: 80px;
@@ -37,12 +40,7 @@
     align-items: center;
     justify-content: center;
 }
-.doberLogo {
-    height: 100px;
-    width: 100px;
-    top: 0px;
-    position: absolute;
-}
+
 .nav-options {
     display: flex;
     list-style-type: none;
@@ -70,31 +68,21 @@
     margin-bottom: 10px;
 }
 
-.road-maphead{
-    font-size: 30px;
-    text-shadow: 3px 3px  whitesmoke;
-    margin-bottom: 20px;
-}
-
-
 .mobile-menu {
     display: none;
 }
+
 @media (max-width: 768px) {
-    /*Mobile View */
+
     .header {
         padding: 0px 10px;
-    }
-
-    .road-maphead{
-        font-size: 20px;
-        text-shadow: 3px 3px  whitesmoke;
     }
 
     .logo {
         width: 45px;
         height: 45px;
     }
+
     .nav-options {
         display: flex;
         width: 100%;
@@ -108,8 +96,9 @@
         list-style-type: none;
         grid-gap: 0px;
     }
+
     .nav-options.active {
-        background-color:  rgba(0,0,0,0);
+        background-color: #dfe8e3;
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -139,25 +128,6 @@
         -ms-transform: translate(0%, 0%);
         transform: translate(0%, 0%);
     }
-
-    .doberLogo {
-        height: 100px;
-        width: 100px;
-        position: absolute;
-    }
-
-
-}
-
-@media (max-width: 900px) {
-
-
-    .road-maphead{
-        font-size: 24px;
-        text-shadow: 3px 3px  whitesmoke;
-        margin-bottom: 10px;
-    }
-
 
 }
 
@@ -190,31 +160,16 @@
     cursor: pointer;
 }
 
-.timer {
-    margin-left: -20px;
-    height: 100px;
-    color: white;
-    width: 100%;
-}
-
 .header > div{
     margin: 10px;
 }
 
-.dubbLogo{
-    cursor: pointer;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    margin-top: -25px;
-}
-
-.logoContainer{
+.logo-container{
     max-height: 100px;
     max-width: 100px;
 }
 
-.headerItems{
+.header-items{
     text-decoration: none;
     display: flex;
     color: rgb(0,0,20);
@@ -222,40 +177,6 @@
     cursor: pointer;
     font-family: 'Righteous';
 
-}
-
-.abouthead{
-    transition: 0.45s;
-}
-
-.teamhead{
-    transition: 0.45s;
-}
-
-.faqhead{
-    transition: 0.45s;
-}
-
-.road-maphead{
-    transition: 0.45s;
-
-}
-
-.abouthead:hover{
-    color: white;
-
-}
-
-.teamhead:hover{
-    color: white;
-}
-
-.faqhead:hover{
-    color: white;
-}
-
-.road-maphead:hover{
-    color: white;
 }
 
 .headerItems > p{
@@ -270,27 +191,6 @@
 
 .headerActions > div{
     margin: 10px;
-}
-
-.discordContainerH{
-    transition: 0.45s;
-    display: flex;
-    margin: 10px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 40px;
-    justify-content: center;
-    align-items: center;
-    object-fit: contain;
-}
-
-.discordContainerH:hover{
-    cursor: pointer;
-    background-color: white;
-}
-
-.discordContainerH > img{
-    height: 20px;
 }
 
 .instagramContainerH{

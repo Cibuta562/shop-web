@@ -7,6 +7,7 @@ function Page() {
     const [items, setItems] = useState([])
 
     useEffect( () => {
+
             axios.get('https://fakestoreapi.com/products')
                 .then( res => {
                     console.log(res)
@@ -26,13 +27,15 @@ function Page() {
                 {
                     items.map(item=> <div className="shop-item" key={item.id}>
                         <h3 className="title-item">{item.title}</h3>
-                        <p className="item-description">
-                            <p className="center-item-description">{item.description}</p>
-                        </p>
                         <img className="img-item" src={item.image} alt="Image for: {item.id}"/>
                         <p className="item-category">{item.category}</p>
                         <p>Rating: {item.rating.rate} Count: {item.rating.count}</p>
                         <h3>{item.price} LEI</h3>
+                        <button className="icon-item">
+                            <a href="#" className="icon-link">
+                                Add to cart
+                            </a>
+                            </button>
                         <br/>
                     </div>)
                 }
