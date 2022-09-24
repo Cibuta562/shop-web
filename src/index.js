@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {HashRouter, Route, Routes} from "react-router-dom";
+import Contact from "./pages/Contact";
+import Cart from "./pages/Cart";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <HashRouter>
+          <Routes>
+              <Route path="/" element={<App/>} />
+              <Route path="/contact" element={<Contact/>} />
+              <Route path="/cart" element={<Cart/>} />
+          </Routes>
+      </HashRouter>
   </React.StrictMode>
 );
 

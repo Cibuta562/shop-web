@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { ReactComponent as CloseMenu } from "../assets/x.svg";
 import { ReactComponent as MenuIcon } from "../assets/menu.svg";
+import insta from "../assets/instagram.png"
 import {Link} from "react-router-dom";
 import logo from "../assets/logo3.png";
+import cart from "../assets/shopping-cart.png"
 import "./Menu.css";
 
 
@@ -38,32 +40,23 @@ const Menu = () => {
     return (
         <div className={colorChange ? 'header color-change' : 'header'}>
             <div className='logo-container'>
+                <Link to="/">
                <img className="logo-shop" src={logo}/>
+                </Link>
             </div>
-            <div className='header-items' style={{marginBottom: "23px", marginRight: "120px", marginTop: "25px"}}>
+            <div className='header-items' >
                 <ul className={ click ? "nav-options active" : "nav-options"}>
-                    <li className="option " onClick={closeMobileMenu}>
-
-                    </li>
-                    <li className="option" onClick={closeMobileMenu} >
-
-                    </li>
-                    <li className="option " onClick={closeMobileMenu} >
-
-                    </li>
-                    <li className="option " onClick={mobileAndMove} >
-
+                    <li className="option buttons1" onClick={closeMobileMenu} >
+                            <Link style={{ textDecoration: 'none' }} to="/cart">
+                                <div className="instagram-container" >
+                                    <img src={cart} />
+                                </div>
+                            </Link>
                     </li>
                     <li className="option buttons"  onClick={closeMobileMenu} >
                         <div className='headerActions'>
-                            <div className="instagramContainerH" >
-                                <img  />
-                            </div>
-                            <div className="twitterContainerH" >
-                                <img  />
-                            </div>
-                            <div className="instagramContainerH" >
-                                <img  />
+                            <div className="instagram-container" >
+                                <img src={insta} />
                             </div>
                         </div>
                     </li>
