@@ -20,16 +20,12 @@ function Page() {
 
     return(
         <div>
-            <h1 className="shop-title">
-                Noft Store
-            </h1>
             <div className="shop-item-list">
                 {
                     items.map(item=> <div className="shop-item" key={item.id}>
                         <h3 className="title-item">{item.title}</h3>
                         <img className="img-item" src={item.image} alt="Image for: {item.id}"/>
-                        <p className="item-category">{item.category}</p>
-                        <p>Rating: {item.rating.rate} Count: {item.rating.count}</p>
+                        <p>Rating: {item.rating.rate}</p>
                         <h3>{item.price} LEI</h3>
                         <button className="icon-item">
                             <a href="#" className="icon-link">

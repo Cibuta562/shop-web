@@ -15,7 +15,7 @@ body{
     text-align: center;
     min-height: 100%;
     width: 300px;
-    background-color: #8A9EA7;
+    background-color: #fff1dd;
     margin: 20px;
     display: inline-block;
     position: relative;
@@ -96,6 +96,6 @@ body{
 }
 
 .icon-item a:hover:before {
-    background: lightpink;
+    background: #6a6161;
 }
 

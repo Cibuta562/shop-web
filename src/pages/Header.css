@@ -1,0 +1,19 @@
+.header-space{
+    height: 600px;
+}
+
+.title-shop{
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    margin: 20px;
+    text-shadow: #61dafb ;
+}
+
+.desc-shop{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+
+}

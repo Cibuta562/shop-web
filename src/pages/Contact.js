@@ -3,8 +3,7 @@ import Menu from "./Menu";
 
 function Contact()  {
     return(
-        <div>
-     <Menu/>
+        <div className="contact-div">
      <h1>Contact</h1>
         </div>
     )

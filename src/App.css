@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .App-logo {
@@ -15,7 +17,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #efeded;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,5 +41,6 @@
 }
 
 body{
-  background-color: #E8DFE0;
+  background-color: #EAEDED;
+  margin: 0;
 }
