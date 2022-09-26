@@ -48,9 +48,18 @@ export const form = [
         section: 3,
         items: [
             {
-                label: 'Just one more step! If you are ready click submit',
+                label: 'Just one more step!',
                 type: 'information'
+            },
+            {
+                label: 'If you are ready click submit.',
+                type: 'information'
+            },
+            {
+                label: 'Submit',
+                type: 'button'
             }
+
         ]
     }
 ]

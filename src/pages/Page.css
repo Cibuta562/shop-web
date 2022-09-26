@@ -2,6 +2,25 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
+.search-bar-text{
+    text-align: center;
+    margin-top: 280px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.search-bar-p{
+    font-size: 40px;
+}
+
+.search-bar{
+    padding: 20px 20px;
+}
+
+.search-bar-box{
+    padding: 10px 30px;
+    text-align: center;
+}
+
 .img-item{
     height: 200px;
     width: 200px;
@@ -15,10 +34,15 @@ body{
     text-align: center;
     min-height: 100%;
     width: 300px;
-    background-color: #fff1dd;
+    background-color: #ffffff;
     margin: 20px;
     display: inline-block;
     position: relative;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border:1px solid black;
+    border-radius: 2px;
 }
 
 .shop-item-list{

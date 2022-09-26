@@ -1,7 +1,15 @@
 import {Form} from "react-bootstrap"
+import "./Cart.css"
 import {useState} from "react";
+import {Link} from "react-router-dom";
+import {useCart} from "react-use-cart";
 
 export const FormItem = ({item, onChange, answer}) => {
+
+    const {
+        emptyCart
+    } = useCart();
+
     const [currentValue, setCurrentValue] = useState(answer || null);
     switch (item.type) {
         case 'text':
@@ -37,6 +45,17 @@ export const FormItem = ({item, onChange, answer}) => {
                 <p>{item.label}</p>
             )
             break;
+
+        case 'button':
+            return (
+                <button onClick={()=> emptyCart()} className="button-submit">
+                    <Link to="/contact" style={{textDecoration: 'none'}}>
+                    {item.label}
+                    </Link>
+                </button>
+            )
+            break;
+
     }
 
     return (

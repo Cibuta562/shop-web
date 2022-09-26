@@ -5,7 +5,8 @@ import React from "react";
 import Footer from "./pages/Footer";
 import Header from "./pages/Header";
 import Contact from "./pages/Contact";
-
+import { CartProvider} from "react-use-cart";
+import ProductCard from "./pages/CartItems";
 
 
 

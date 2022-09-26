@@ -1,45 +1,50 @@
 import React, {useEffect, useState} from "react";
 import axios from 'axios'
+import { Container, Row, Col, InputGroup, FormControl } from 'react-bootstrap';
 import "./Page.css"
+import ProductCard from "./CartItems";
+import SearchFilter from 'react-filter-search';
 
-function Page() {
+const Page = () => {
+    const [searchInput, setSearchInput] = useState('');
+    const [productData, setProductData] = useState([]);
 
-    const [items, setItems] = useState([])
+    async function getResponse(){
+        const res = await fetch('https://fakestoreapi.com/products')
+            .then(res=> res.json());
+        setProductData(await res);
+    }
 
-    useEffect( () => {
+    useEffect(()=>{
+        getResponse();
+    },[]);
 
-            axios.get('https://fakestoreapi.com/products')
-                .then( res => {
-                    console.log(res)
-                    setItems(res.data)
-                })
-                .catch(err => {
-                    console.log(err)
-                })
-        })
+    return (
+        <div className="search-bar-text">
+                    <p className="search-bar-p">Search products</p>
+                    <InputGroup size="lg" className="search-bar mb-lg-3">
+                        <FormControl
+                            className="search-bar-box"
+                            aria-label="Large"
+                            placeholder="Search"
+                            value={searchInput}
+                            onChange={(e)=> setSearchInput(e.target.value)}
+                        />
+                    </InputGroup>
+                <SearchFilter
+                    value={searchInput}
+                    data={productData}
+                    renderResults={results =>(
+                        <Row className="justify-content-center">
+                            {results.map((item, i)=>(
+                                <ProductCard data={item} key={i} />
+                            ))}
+                        </Row>
+                    )}
+                />
 
-    return(
-        <div>
-            <div className="shop-item-list">
-                {
-                    items.map(item=> <div className="shop-item" key={item.id}>
-                        <h3 className="title-item">{item.title}</h3>
-                        <img className="img-item" src={item.image} alt="Image for: {item.id}"/>
-                        <p>Rating: {item.rating.rate}</p>
-                        <h3>{item.price} LEI</h3>
-                        <button className="icon-item">
-                            <a href="#" className="icon-link">
-                                Add to cart
-                            </a>
-                            </button>
-                        <br/>
-                    </div>)
-                }
-            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Page
-
-
+export default Page;

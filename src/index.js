@@ -6,10 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import {HashRouter, Route, Routes} from "react-router-dom";
 import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
+import {CartProvider} from "react-use-cart";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+      <CartProvider>
       <HashRouter>
           <Routes>
               <Route path="/" element={<App/>} />
@@ -17,6 +20,7 @@ root.render(
               <Route path="/cart" element={<Cart/>} />
           </Routes>
       </HashRouter>
+      </CartProvider>
   </React.StrictMode>
 );
 

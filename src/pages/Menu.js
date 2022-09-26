@@ -6,9 +6,14 @@ import {Link} from "react-router-dom";
 import logo from "../assets/logo3.png";
 import cart from "../assets/shopping-cart.png"
 import "./Menu.css";
+import {useCart} from "react-use-cart";
 
 
 const Menu = () => {
+
+    const {
+        totalItems,
+    } = useCart();
 
 
     const [colorChange, setColorchange] = useState(false);
@@ -49,6 +54,7 @@ const Menu = () => {
                     <li className="option buttons1" onClick={closeMobileMenu} >
                             <Link style={{ textDecoration: 'none' }} to="/cart">
                                 <div className="instagram-container" >
+                                    <div className="items-in-cart">{totalItems}</div>
                                     <img src={cart} />
                                 </div>
                             </Link>
@@ -62,7 +68,7 @@ const Menu = () => {
                     </li>
                 </ul>
             </div>
-            <div  className="mobile-menu"   onClick={handleClick}>
+            <div  className="mobile-menu"  onClick={handleClick}>
                 {click ? (
                     <CloseMenu className="menu-icon"/>
                 ) : (
