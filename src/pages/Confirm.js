@@ -48,11 +48,11 @@ function Confirm () {
     return(
         <div>
             <Menu/>
-            <Container className="py-4 mt-5">
+            <Container >
                 <h1 className="cart-top" >
                     {isEmpty? 'Your order is empty :(' : 'Your order'}
                 </h1>
-                <div>
+                <div className="confirm-div">
                     {items.map((item, index)=>{
                         return(
                             <div key={index} className="item-card">

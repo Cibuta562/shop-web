@@ -9,7 +9,7 @@
 
 
 .clear-btn{
-    padding: 10px 8px;
+    padding: 10px 40px;
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     margin-left: 20px;
@@ -19,7 +19,15 @@
 
 .clear-cart-div{
     display: flex;
-    align-items: center;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+}
+
+
+.center-items {
+    align-content: center;
+    text-align: center;
 }
 
 .cart-items{
@@ -38,7 +46,7 @@
     margin: 40px;
     width: 300px;
     display: inline-block;
-    height: 380px;
+    height: 420px;
 }
 
 .items{
@@ -52,6 +60,7 @@
 
 .cart-item-title{
     font-size: 20px;
+    height: 80px;
 }
 
 .buttons-for-items{
@@ -61,7 +70,7 @@
 }
 
 .btn-remove{
-    padding: 5px 50px;
+    padding: 5px 45px;
     font-family: 'Nunito', sans-serif;
     color: black;
     font-size: 18px;
@@ -90,7 +99,7 @@
     font-size: 28px;
     text-align: center;
     padding-bottom: 60px;
-    padding-top: 40px;
+    padding-top: 120px;
 }
 
 .cart-products{

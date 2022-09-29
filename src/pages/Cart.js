@@ -78,7 +78,7 @@ function Cart () {
                             )
                         })}
                     {!isEmpty &&
-                    <div>
+                    <div className="center-items">
                             <h4 className="total-cart">Total Price: {cartTotal.toFixed(2)} LEI</h4>
                         <div className="clear-cart-div">
                         <img className="sad-cart" src={sadCart}/>
