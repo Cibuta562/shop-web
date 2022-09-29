@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shop-web/static/css/main.95640bf0.css",
-    "main.js": "/shop-web/static/js/main.aa35ca0f.js",
+    "main.css": "/shop-web/static/css/main.6c2e1a72.css",
+    "main.js": "/shop-web/static/js/main.963745b4.js",
     "static/js/787.68ad8508.chunk.js": "/shop-web/static/js/787.68ad8508.chunk.js",
     "static/media/patrick-gillespie-bn81oJsgcE8-unsplash.jpg": "/shop-web/static/media/patrick-gillespie-bn81oJsgcE8-unsplash.1a220121964c22d5b48d.jpg",
     "static/media/header-pic.jpg": "/shop-web/static/media/header-pic.c53a1b7d91a1ef812699.jpg",
@@ -13,12 +13,12 @@
     "index.html": "/shop-web/index.html",
     "static/media/x.svg": "/shop-web/static/media/x.935643751287d28c34528496aefc1995.svg",
     "static/media/menu.svg": "/shop-web/static/media/menu.7b81140eb8ea51a043408df6f0a3e33c.svg",
-    "main.95640bf0.css.map": "/shop-web/static/css/main.95640bf0.css.map",
-    "main.aa35ca0f.js.map": "/shop-web/static/js/main.aa35ca0f.js.map",
+    "main.6c2e1a72.css.map": "/shop-web/static/css/main.6c2e1a72.css.map",
+    "main.963745b4.js.map": "/shop-web/static/js/main.963745b4.js.map",
     "787.68ad8508.chunk.js.map": "/shop-web/static/js/787.68ad8508.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95640bf0.css",
-    "static/js/main.aa35ca0f.js"
+    "static/css/main.6c2e1a72.css",
+    "static/js/main.963745b4.js"
   ]
 }
