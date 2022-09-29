@@ -20,6 +20,7 @@ const Page = () => {
     },[]);
 
     return (
+        <div>
         <div className="search-bar-text">
                     <p className="search-bar-p">Search products</p>
                     <InputGroup size="lg" className="search-bar mb-lg-3">
@@ -31,17 +32,20 @@ const Page = () => {
                             onChange={(e)=> setSearchInput(e.target.value)}
                         />
                     </InputGroup>
+        </div>
+            <div >
                 <SearchFilter
                     value={searchInput}
                     data={productData}
-                    renderResults={results =>(
-                        <Row className="justify-content-center">
+                    renderResults={results =>(<div className="items">
                             {results.map((item, i)=>(
                                 <ProductCard data={item} key={i} />
                             ))}
-                        </Row>
+                        </div>
                     )}
+
                 />
+            </div>
 
         </div>
     );

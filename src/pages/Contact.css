@@ -1,3 +1,48 @@
 .contact-div{
     height: 600px;
+    padding-bottom: 150px;
+}
+
+.map-contact{
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+}
+
+.contact-details{
+    font-size: 18px;
+    padding: 2px;
+}
+
+.line{
+    border-bottom: 1px solid black;
+    width: 6%;
+    left: 47%;
+    transform: translate(0%, 47%);
+    position: absolute;
+    margin: 0;
+}
+
+.map{
+    margin-top: 40px;
+    border: 2px solid black;
+    max-width: 100%;
+}
+
+.total-confirm{
+    font-size: 20px;
+}
+
+.place-order-btn{
+    padding: 10px 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: black;
+    border: 1px solid black;
+}
+
+.contact-title{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
 }

@@ -48,8 +48,8 @@ export const FormItem = ({item, onChange, answer}) => {
 
         case 'button':
             return (
-                <button onClick={()=> emptyCart()} className="button-submit">
-                    <Link to="/contact" style={{textDecoration: 'none'}}>
+                <button className="button-submit">
+                    <Link to="/confirm" style={{textDecoration: 'none'}}>
                     {item.label}
                     </Link>
                 </button>

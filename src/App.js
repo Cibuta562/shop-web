@@ -7,6 +7,7 @@ import Header from "./pages/Header";
 import Contact from "./pages/Contact";
 import { CartProvider} from "react-use-cart";
 import ProductCard from "./pages/CartItems";
+import Image from "./pages/Image";
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Menu/>
       <Header/>
       <Page/>
+      <Image/>
       <Contact/>
       <Footer/>
      </div>

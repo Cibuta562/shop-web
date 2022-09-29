@@ -6,7 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import {HashRouter, Route, Routes} from "react-router-dom";
 import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
+import Confirm from "./pages/Confirm";
 import {CartProvider} from "react-use-cart";
+import ThankYou from "./pages/ThankYou";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,6 +20,8 @@ root.render(
               <Route path="/" element={<App/>} />
               <Route path="/contact" element={<Contact/>} />
               <Route path="/cart" element={<Cart/>} />
+              <Route path="/confirm" element={<Confirm/>} />
+              <Route path="/thanks" element={<ThankYou/>} />
           </Routes>
       </HashRouter>
       </CartProvider>

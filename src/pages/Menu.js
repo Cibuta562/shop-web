@@ -3,17 +3,21 @@ import { ReactComponent as CloseMenu } from "../assets/x.svg";
 import { ReactComponent as MenuIcon } from "../assets/menu.svg";
 import insta from "../assets/instagram.png"
 import {Link} from "react-router-dom";
-import logo from "../assets/logo3.png";
+import logo from "../assets/logo-new.png";
 import cart from "../assets/shopping-cart.png"
 import "./Menu.css";
 import {useCart} from "react-use-cart";
+//import {cartState, setCartState} from "./CartItems";
+import {useBootstrapBreakpoints} from "react-bootstrap/ThemeProvider";
 
+export const str = "Maus"
 
-const Menu = () => {
+const Menu = (props) => {
 
     const {
         totalItems,
     } = useCart();
+
 
 
     const [colorChange, setColorchange] = useState(false);
@@ -38,9 +42,19 @@ const Menu = () => {
         closeMobileMenu();
     }
 
+
+    const [cart1, setCart1] = useState(false)
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
+    const closeMobileMenu = () => {
+        setClick(false);
+    }
+
+    const openMobileMenu = () => {
+        setClick(true);
+    }
+
+
 
     return (
         <div className={colorChange ? 'header color-change' : 'header'}>
@@ -51,7 +65,7 @@ const Menu = () => {
             </div>
             <div className='header-items' >
                 <ul className={ click ? "nav-options active" : "nav-options"}>
-                    <li className="option buttons1" onClick={closeMobileMenu} >
+                    <li className="option buttons1" onClick={mobileAndMove } >
                             <Link style={{ textDecoration: 'none' }} to="/cart">
                                 <div className="instagram-container" >
                                     <div className="items-in-cart">{totalItems}</div>
@@ -59,7 +73,7 @@ const Menu = () => {
                                 </div>
                             </Link>
                     </li>
-                    <li className="option buttons"  onClick={closeMobileMenu} >
+                    <li className="option buttons"  onClick={mobileAndMove} >
                         <div className='headerActions'>
                             <div className="instagram-container" >
                                 <img src={insta} />

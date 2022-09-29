@@ -18,6 +18,10 @@
     background-color: #ffffff;
 }
 
+.menu-icon {
+    opacity: 0;
+}
+
 
 .logo-nav {
     display: flex;
@@ -112,6 +116,7 @@
     .menu-icon {
         width: 45px;
         height: 45px;
+        opacity: 1;
     }
     .option {
         display: flex;

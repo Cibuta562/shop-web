@@ -3,6 +3,11 @@ export const form = [
         section: 1,
         items: [
             {
+                label: 'PLease log in into your account',
+                type: 'information',
+                value: 'address'
+            },
+            {
                 label: 'username',
                 type: 'text',
                 value:'username'
